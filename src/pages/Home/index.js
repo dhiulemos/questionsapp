@@ -55,7 +55,7 @@ const Home = () => {
             profilePicture={userData.profilePicture}
             handleLogout={handleLogout}
           />
-          <QuizList />
+          <QuizList navigation={navigation} />
           {/* <RecentQuiz user={userData} /> */}
         </>
       ) : (

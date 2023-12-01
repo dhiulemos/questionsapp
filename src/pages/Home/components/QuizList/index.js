@@ -26,9 +26,7 @@ const QuizList = ({ navigation }) => {
         <TouchableOpacity
           key={index}
           style={styles.quizItem}
-          onPress={() =>
-            navigation.navigate('QuizScreen', { quizId: quiz.id })
-          }>
+          onPress={() => navigation.navigate('QuizScreen', { quiz: quiz })}>
           <Text style={styles.text}>{quiz.title}</Text>
           <Text style={styles.playText}>Jogar!</Text>
         </TouchableOpacity>
